@@ -1,0 +1,50 @@
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+
+export default function Header() {
+    const [isVisible, setIsVisible] = useState(false);
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.pathname === "/" || location.pathname === "/home") {
+            const handleScroll = () => {
+                const scrollY = window.scrollY;
+                setIsVisible(scrollY > 400);
+            };
+
+            window.addEventListener("scroll", handleScroll);
+            return () => {
+                window.removeEventListener("scroll", handleScroll);
+            };
+        } else {
+            setIsVisible(true);
+        }
+    }, [location.pathname]);
+
+    const headerVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+    };
+
+    return (
+        <motion.header
+            className={
+                "fixed flex justify-between align-items-start bottom-10 left-0 right-0 w-full min-w-screen mx-auto max-w-[25%] py-4 z-50 backdrop-blur-md rounded-[2rem] border border-white/20 shadow-lg p-8"
+            }
+            initial = "hidden"
+            animate = {isVisible ? "visible" : "hidden"}
+            variants = {headerVariants}
+        >
+            <nav className="space-x-3 text-textcolor font-large font-spaceMono text-center flex">
+                <Link to="/gallery" className="hover:underline">GALLERY</Link>
+            </nav>
+            <nav className="space-x-3 text-textcolor font-large font-spaceMono text-center flex">
+                <Link to="/home" className="hover:underline">HOME</Link>
+            </nav>
+            <nav className="space-x-3 text-textcolor font-large font-robot text-spaceMono flex">
+                <Link to="/projects" className="hover:underline">PROJECTS</Link>
+            </nav>
+        </motion.header>
+    )
+}
