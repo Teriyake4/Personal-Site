@@ -1,39 +1,39 @@
-import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion"
+import { useState, useEffect } from "react"
+import { Link, useLocation } from "react-router-dom"
 
 export default function Header() {
-    const [isVisible, setIsVisible] = useState(false);
-    const location = useLocation();
+    const [isVisible, setIsVisible] = useState(false)
+    const location = useLocation()
 
     useEffect(() => {
         if (location.pathname === "/" || location.pathname === "/home") {
             const handleScroll = () => {
-                const scrollY = window.scrollY;
-                setIsVisible(scrollY > 400);
-            };
+                const scrollY = window.scrollY
+                setIsVisible(scrollY > 480)
+            }
 
-            window.addEventListener("scroll", handleScroll);
+            window.addEventListener("scroll", handleScroll)
             return () => {
-                window.removeEventListener("scroll", handleScroll);
-            };
+                window.removeEventListener("scroll", handleScroll)
+            }
         } else {
-            setIsVisible(true);
+            setIsVisible(true)
         }
-    }, [location.pathname]);
+    }, [location.pathname])
 
     const headerVariants = {
-        hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
-    };
+        initial: { opacity: 0, y: 50, transition: { duration: 0.2 } },
+        final: { opacity: 1, y: 0, transition: { duration: 0.2 } }
+    }
 
     return (
         <motion.header
             className={
                 "fixed flex justify-between align-items-start bottom-10 left-0 right-0 w-full min-w-screen mx-auto max-w-[25%] py-4 z-50 backdrop-blur-md rounded-[2rem] border border-white/20 shadow-lg p-8"
             }
-            initial = "hidden"
-            animate = {isVisible ? "visible" : "hidden"}
+            initial = "initial"
+            animate = {isVisible ? "final" : "initial"}
             variants = {headerVariants}
         >
             <nav className="space-x-3 text-textcolor font-large font-spaceMono text-center flex">

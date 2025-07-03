@@ -12,7 +12,7 @@ module.exports = {
         textcolor: "#FFFAF7"
       },
       backgroundImage: {
-        "radial-gradient": "radial-gradient(ellipse 100% 120% at 110% -50%, var(--tw-gradient-stops))",
+        "radial-gradient": "radial-gradient(ellipse 80% 100% at 110% -50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
         spaceMono: ["Space Mono", "monospace"],

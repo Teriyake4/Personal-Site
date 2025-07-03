@@ -1,22 +1,20 @@
-import React from "react";
-import { useRef, useState, useEffect } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import Header from "../../components/Header";
-import Curve from "../../components/Curve";
-import { ReactComponent as WaveSVG } from "../../assets/wave.svg";
+import { useRef } from "react"
+import { motion, useScroll, useTransform } from "framer-motion"
 
     
 export default function Page() {
-    const ref = useRef(null);
-    const {scrollY} = useScroll({target: ref});
+    const ref = useRef(null)
+    const {scrollY} = useScroll({target: ref})
 
-    const windowScale = useTransform(scrollY, [0, 500], [0.9, 1]);
-    const cornerRadius = useTransform(scrollY, [0, 500], ["2rem", "0rem"]);
+    const windowScale = useTransform(scrollY, [0, 480], [0.9, 1])
+    const cornerRadius = useTransform(scrollY, [0, 500], ["2rem", "0rem"]) // "0rem"
 
-    const yName = useTransform(scrollY, [0, 1000], [0, -800]);
+    const yName = useTransform(scrollY, [0, 1000], [0, -800])
     const ySubTop = useTransform(scrollY, [0, 1000], [0, -500])
     const ySubBot = useTransform(scrollY, [0, 1000], [0, -1200])
-    const backgroundColor = useTransform(scrollY, [0, 1000], ["", "#fff"]);
+    // const backgroundColor = useTransform(scrollY, [0, 1000], ["", "#fff"])
+
+
 
     return (
         <>
@@ -56,20 +54,19 @@ export default function Page() {
             {/* CONTACT */}
         </motion.div>
       </div>
-        <div className="relative h-screen z-30 bg-base top-[30rem] p-40">
+        <div className="relative h-screen z-30 bg-base top-[30rem] p-50">
             <section className="flex justify-left">
-                <p className="text-[4rem] text-textcolor font-roboto">
+                <p className="text-[4rem] text-textcolor font-roboto px-16">
                     Hey — I'm Ian
                 </p>
             </section>
-            <section className="flex justify-center mt-4">
-                <p className="text-[2rem] text-textcolor font-robot top-[-8rem]">
+            <section className="flex justify-center">
+                <p className="text-[2rem] text-textcolor font-robot px-16">
                     Welcome to my personal portfolio website!
-                    I'm a computer science student with a passion for photography with curiosity and a drive to learn.
+                    I'm a computer science student with a passion for photography. Check out my projects and photos, and feel free to reach out if you have any questions or just want to chat.
                 </p>
             </section>
         </div>
-        <Header />
         </>
     )
 }

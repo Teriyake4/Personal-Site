@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Kalnia+Glaze:wght@100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Kalnia+Glaze:wght@100..700&family=Roboto:ital,wght@0,100..9001,100..900&display=swap');
 
 body {
-  @apply bg-black;
+  @apply bg-base;
 }
 
 code {

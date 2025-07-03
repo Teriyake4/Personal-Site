@@ -1,10 +1,10 @@
-import React from "react";
-import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./app/home/Page";
-import Gallery from "./app/gallery/Page";
-import Projects from "./app/projects/Page";
-import Header from "./components/Header";
+import React from "react"
+import "./App.css"
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom"
+import Home from "./app/home/Page"
+import Gallery from "./app/gallery/Page"
+import Projects from "./app/projects/Page"
+import Header from "./components/Header"
 
 const App: React.FC = () => {
     return (
@@ -17,7 +17,7 @@ const App: React.FC = () => {
                 <Route path="/projects" element={<Projects />} />
             </Routes>
         </Router>
-    );
+    )
 }
 
-export default App;
+export default App
