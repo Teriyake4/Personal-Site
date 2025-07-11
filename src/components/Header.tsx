@@ -30,7 +30,7 @@ export default function Header() {
     return (
         <motion.header
             className={
-                "fixed flex justify-between align-items-start bottom-10 left-0 right-0 w-full min-w-screen mx-auto max-w-[25%] py-4 z-50 backdrop-blur-md rounded-[2rem] border border-white/20 shadow-lg p-8"
+                "fixed flex justify-between align-items-start bottom-10 left-0 right-0 w-full min-w-screen mx-auto max-w-[25%] py-4 z-50 backdrop-blur-md rounded-[20px] border border-white/20 shadow-lg p-8"
             }
             initial = "initial"
             animate = {isVisible ? "final" : "initial"}
