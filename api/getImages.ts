@@ -1,11 +1,11 @@
 import { Client } from "@microsoft/microsoft-graph-client"
 import { VercelRequest, VercelResponse } from "@vercel/node";
-import getClient from "./auth"
-import fetchDriveItems from "./fetchDriveItems"
+import getClient from "./auth.js"
+import fetchDriveItems from "./fetchDriveItems.js"
 import { DriveItemUrl, Image } from "./type";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-    const functionPath = "${functionPath}";
+    const functionPath = "getImages/handler";
     console.log(`[${req.method}] ${req.url} - Acquiring images`);
     // Get client
     let client: Client;
