@@ -1,27 +1,44 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import type { Image } from '../../../api/type';
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
+function event(eventName: string, previewImg: string, link: string): React.ReactNode {
+    return (
+        <div className="my-8 mx-[6rem] rounded-[30px] overflow-hidden bg-white/5 backdrop-blur-md border border-white/20 p-3">
+            <Link to={link}>
+                <h2 className="text-[1.2rem] text-textcolor font-spaceMono p-1">
+                    {eventName}
+                </h2>
+                <nav className="rounded-[20px] overflow-hidden">
+                    <section className="flex justify-center">
+                        <motion.img
+                            src={previewImg}
+                            className="w-full h-full object-cover cursor-pointer"
+                        />
+                    </section>
+                </nav>
+            </Link>
+        </div>
+    );
+}
 
 export default function Page() {
     // https://1drv.ms/f/c/87b17533b507916d/EsrgrVEkkyVJrvMSNntZrZAB7PbqrQRRfQvpiWWMS4vM4w?e=v78k0f
-    interface Image {
-        id: number;
-        preview: string;
-        image: string;
-        aspectRatio: number;
-    }
-    const [images, setImages] = useState<Image[]>([]);
-
-    useEffect(() => {
-        console.log("Getting getImages")
-        fetch("/api/images")
-            .then(response => response.json())
-            .then(data => setImages(data))
-    })
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-base">
-            <h1 className="text-4xl font-bold text-textcolor mb-4">Gallery Page</h1>
-            {/* <div className="text-textcolor">{images}</div> */}
+        <div className="flex flex-col items-center h-screen bg-base">
+            <h1 className="my-[2rem] text-[3rem] text-textcolor mb-4 font-spaceMono">
+                Gallery
+            </h1>
+            <section className="flex justify-center mx-[6rem]">
+                {event(
+                    "North California/Oregon",
+                    "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/road_trip_2025/DSC01747-Pano_disp.jpeg",
+                    "/gallery/california-oregon"
+                )}
+            </section>
         </div>
     )
 }
