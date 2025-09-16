@@ -1,5 +1,6 @@
 import React from "react"
 import "./App.css"
+import { Analytics } from "@vercel/analytics/react"
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom"
 import Home from "./app/home/Page"
 import Gallery from "./app/gallery/Page"
@@ -14,10 +15,10 @@ const App: React.FC = () => {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/gallery" element={<Gallery/>}/>
-                <Route path="/home" element={<Home/>}/>
                 <Route path="/projects" element={<Projects/>}/>
                 <Route path="/gallery/california-oregon" element={<RoadTrip/>}/>
             </Routes>
+            <Analytics />
         </Router>
     )
 }
