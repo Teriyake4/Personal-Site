@@ -37,7 +37,7 @@ export default function Page() {
                 style={{ y: yName }}
                 className="
                     absolute z-10 flex items-center justify-center text-center w-full h-full tracking-[-0.06em] text-white font-spaceMono font-bold
-                    text-[3rem] sm:text-[3rem] md:text-[4rem] lg:text-[6rem]
+                    text-[2.5rem] sm:text-[3rem] md:text-[4rem] lg:text-[6rem]
                 "
             >
                 Hey — I'm Ian
@@ -46,48 +46,52 @@ export default function Page() {
                 style={{ y: ySub }}
                 className="
                     absolute z-10 bottom-[6.5rem] text-white font-spaceMono
-                    text-[0.9rem] sm:text-[0.9rem] md:text-[0.9rem] lg:text-[1rem]
+                    text-[0.7rem] sm:text-[0.9rem] md:text-[0.9rem] lg:text-[1rem]
                 "
             >
                 Welcome to my personal portfolio website
             </motion.div>
         </div>
         
-        <div className="relative h-screen bg-base top-[30rem] p-50 mx-[6rem]">
+        <div className="relative h-screen top-[10rem] md:top-[30rem] p-50 mx-6">
             {/*  Intro */}
-            <div className="my-8">
+            <div className="my-4 md:my-8 grid grid-cols-1 md:grid-cols-2 gap-4">
                 <h2 className="text-[3rem] text-textcolor font-spaceMono p-8">
                     About Me
                 </h2>
-                <div className="backdrop-blur-md rounded-[20px] border border-white/20 p-8">
-                    <section className="flex justify-center">
+                <div className="backdrop-blur-md rounded-[20px] border border-white/20 p-6">
+                    <section className="flex flex-col justify-center gap-4">
                         <p className="
                             text-textcolor font-spaceMono tracking-tight
                             text-[1rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.5rem]
                         ">
-                            I'm a second year computer science student at Stevens Institute of Technology in New Jersey. 
-                            I have a wide range of skills and a specialized interest in AI. I have a drive to learn and pursue topics on my own. 
+                            I'm a second year computer science student at Stevens Institute of Technology in New Jersey with a interest in AI. 
+                            Alongside my coursework, I've been building a broad set of skills through personal projects and hands on learning. 
+                        </p>
+                        <p className="
+                            text-textcolor font-spaceMono tracking-tight
+                            text-[1rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.5rem]
+                        ">
+                            I love tackling ambitious challenges and diving into large projects that push me to learn and apply learned content to practical ideas. 
+                            Beyond the screens, and when I eventually find free time, I enjoy photography and getting active, whether it be on two feet, with a ball, or on two wheels. 
                             Check out my projects and photos, and feel free to reach out if you have any questions or just want to chat.
                         </p>
                     </section>
                 </div>
             </div>
-            {/* Languages */}
+            {/* Contact */}
             <div className="my-8">
                 <section className="p-50">
                     <h2 className="text-[3rem] text-textcolor font-spaceMono p-8">
-                        Languages
+                        Contact
                     </h2>
                 </section>
                 <div className="flex flex-row gap-4 m-8 justify-center">
-                    <div className="backdrop-blur-md rounded-[20px] border border-white/20 p-8">
-                        Python
+                    <div className="text-textcolor font-spaceMono backdrop-blur-md rounded-[20px] border border-white/20 p-8">
+                        LinkedIn
                     </div>
-                    <div className="backdrop-blur-md rounded-[20px] border border-white/20 p-8">
-                        Java
-                    </div>
-                    <div className="backdrop-blur-md rounded-[20px] border border-white/20 p-8">
-                        TypeScript
+                    <div className="text-textcolor font-spaceMono backdrop-blur-md rounded-[20px] border border-white/20 p-8">
+                        GitHub
                     </div>
                 </div>
             </div>

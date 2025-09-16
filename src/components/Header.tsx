@@ -30,7 +30,7 @@ export default function Header() {
     return (
         <motion.header
             className={
-                "fixed flex justify-between align-items-start bottom-10 left-0 right-0 w-full min-w-screen mx-auto py-4 z-50 backdrop-blur-md rounded-[20px] border border-white/20 shadow-lg p-8 max-w-[90%] sm:max-w-[90%] md:max-w-[50%] lg:max-w-[25%]"
+                "fixed flex justify-between align-items-start top-6 left-0 right-0 w-full min-w-screen mx-auto py-4 z-50 backdrop-blur-md rounded-[20px] border border-white/20 shadow-lg p-8 max-w-[90%] sm:max-w-[80%] md:max-w-[50%] lg:max-w-[25%]"
             }
             initial = "initial"
             animate = {isVisible ? "final" : "initial"}
@@ -40,7 +40,7 @@ export default function Header() {
                 <Link to="/gallery" className="hover:underline">GALLERY</Link>
             </nav>
             <nav className="space-x-3 text-textcolor font-large font-spaceMono text-center flex">
-                <Link to="/home" className="hover:underline">HOME</Link>
+                <Link to="/" className="hover:underline">HOME</Link>
             </nav>
             <nav className="space-x-3 text-textcolor font-large font-robot text-spaceMono flex">
                 <Link to="/projects" className="hover:underline">PROJECTS</Link>

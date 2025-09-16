@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function event(eventName: string, previewImg: string, link: string): React.ReactNode {
     return (
-        <div className="my-8 mx-[6rem] rounded-[30px] overflow-hidden bg-white/5 backdrop-blur-md border border-white/20 p-3">
+        <div className="my-1 rounded-[30px] overflow-hidden bg-white/5 backdrop-blur-md border border-white/20 p-2">
             <Link to={link}>
                 <h2 className="text-[1.2rem] text-textcolor font-spaceMono p-1">
                     {eventName}
@@ -15,7 +15,7 @@ function event(eventName: string, previewImg: string, link: string): React.React
                     <section className="flex justify-center">
                         <motion.img
                             src={previewImg}
-                            className="w-full h-full object-cover cursor-pointer"
+                            className="w-full h-[16rem] object-cover cursor-pointer"
                         />
                     </section>
                 </nav>
@@ -29,10 +29,10 @@ export default function Page() {
 
     return (
         <div className="flex flex-col items-center h-screen bg-base">
-            <h1 className="my-[2rem] text-[3rem] text-textcolor mb-4 font-spaceMono">
+            <h1 className="my-[6rem] text-[3rem] text-textcolor mb-4 font-spaceMono">
                 Gallery
             </h1>
-            <section className="flex justify-center mx-[6rem]">
+            <section className="flex justify-center m-6">
                 {event(
                     "North California/Oregon",
                     "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/road_trip_2025/DSC01747-Pano_disp.jpeg",
