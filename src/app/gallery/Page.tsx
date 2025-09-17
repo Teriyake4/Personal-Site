@@ -32,7 +32,7 @@ export default function Page() {
             <h1 className="my-[6rem] text-[3rem] text-textcolor mb-4 font-spaceMono">
                 Gallery
             </h1>
-            <section className="flex justify-center m-6">
+            <section className="flex justify-center m-1 md:m-4">
                 {event(
                     "North California/Oregon",
                     "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/road_trip_2025/DSC01747-Pano_disp.jpeg",

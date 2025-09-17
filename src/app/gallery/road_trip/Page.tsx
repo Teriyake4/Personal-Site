@@ -10,7 +10,6 @@ export default function Page() {
         {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/road_trip_2025/DSC01685_disp.jpeg", orientation: "portrait"},
         {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/road_trip_2025/DSC01995_disp.jpeg", orientation: "landscape"},
         {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/road_trip_2025/DSC01635_disp.jpeg", orientation: "portrait" },
-        {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/road_trip_2025/DSC01701_disp.jpeg", orientation: "landscape"},
         {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/road_trip_2025/DSC01747-Pano_disp.jpeg", orientation: "pano"},
         {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/road_trip_2025/DSC01725_disp.jpeg", orientation: "portrait"},
         {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/road_trip_2025/DSC01921_disp.jpeg", orientation: "landscape"},
@@ -25,8 +24,8 @@ export default function Page() {
     ]
 
     return (
-        <div className="flex flex-col items-center h-screen bg-base m-6">
-            <h1 className="text-[2rem] text-textcolor mb-4 font-spaceMono my-[6rem]">
+        <div className="flex flex-col items-center h-screen bg-base m-1 md:m-4">
+            <h1 className="text-[2rem] text-textcolor mb-4 font-spaceMono m-[6rem]">
                 North California/Oregon
             </h1>
             {/* auto-rows-[90vh] */}
@@ -37,7 +36,7 @@ export default function Page() {
                     return (
                     <div
                         key={idx}
-                        className={`flex items-center justify-center relative overflow-hidden row-span-1 bg-white/5 backdrop-blur-md border border-white/20 rounded-[20px] p-3
+                        className={`flex items-center justify-center relative overflow-hidden row-span-1 bg-white/5 backdrop-blur-md border border-white/20 rounded-[20px] p-1
                             ${colSpan === 1 ? "col-span-1 md:col-span-1" : ""}
                             ${colSpan === 2 ? "col-span-1 md:col-span-2" : ""}
                             ${colSpan === 4 ? "col-span-1 md:col-span-4" : ""}
