@@ -53,10 +53,10 @@ export default function Page() {
             </motion.div>
         </div>
         
-        <div className="relative h-screen top-[10rem] md:top-[30rem] p-50 mx-6">
+        <div className="relative h-screen top-[10rem] md:top-[30rem] p-50 m-2 md:m-4">
             {/*  Intro */}
             <div className="my-4 md:my-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-                <h2 className="text-[3rem] text-textcolor font-spaceMono p-8">
+                <h2 className="text-[3rem] text-textcolor font-spaceMono px-8">
                     About Me
                 </h2>
                 <div className="backdrop-blur-md rounded-[20px] border border-white/20 p-6">
@@ -82,17 +82,25 @@ export default function Page() {
             {/* Contact */}
             <div className="my-8">
                 <section className="p-50">
-                    <h2 className="text-[3rem] text-textcolor font-spaceMono p-8">
+                    <h2 className="text-[3rem] text-textcolor font-spaceMono px-8">
                         Contact
                     </h2>
                 </section>
-                <div className="flex flex-row gap-4 m-8 justify-center">
-                    <div className="text-textcolor font-spaceMono backdrop-blur-md rounded-[20px] border border-white/20 p-8">
-                        LinkedIn
-                    </div>
-                    <div className="text-textcolor font-spaceMono backdrop-blur-md rounded-[20px] border border-white/20 p-8">
-                        GitHub
-                    </div>
+                <div className="flex flex-row gap-4 m-4 justify-center">
+                    <a href="https://www.linkedin.com/in/chaoian/" target="_blank" rel="noopener noreferrer">
+                        <img 
+                            src="/linkedin.png" 
+                            alt="LinkedIn" 
+                            className="w-full h-[8rem] text-textcolor font-spaceMono backdrop-blur-md rounded-[20px] border border-white/20 p-8"
+                        />
+                    </a>
+                    <a href="https://github.com/Teriyake4" target="_blank" rel="noopener noreferrer">
+                        <img 
+                            src="/github.png" 
+                            alt="Github" 
+                            className="w-full h-[8rem] text-textcolor font-spaceMono backdrop-blur-md rounded-[20px] border border-white/20 p-8"
+                        />
+                    </a>
                 </div>
             </div>
         </div>
