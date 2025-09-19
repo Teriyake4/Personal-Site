@@ -43,10 +43,12 @@ export default function Page() {
                         `}
                     >
 
+                    <div className="h-full w-full flex items-center justify-center">
                         <img
-                        src={img.src}
-                        className="w-full h-auto object-contain rounded-[15px] cursor-pointer"
+                            src={img.src}
+                            className="h-full w-full object-cover rounded-[15px] cursor-pointer"
                         />
+                    </div>
                     </div>
                     );
                 })}
