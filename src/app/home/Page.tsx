@@ -73,7 +73,7 @@ export default function Page() {
                             text-[1rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.5rem]
                         ">
                             I love tackling ambitious challenges and diving into large projects that push me to learn and apply learned content to practical ideas. 
-                            Beyond the screens, and when I eventually find free time, I enjoy photography and getting active, whether it be on two feet, with a ball, or on two wheels. 
+                            Beyond the screens, and when I eventually find free time, I enjoy photography and getting active.
                             Check out my projects and photos, and feel free to reach out if you have any questions or just want to chat.
                         </p>
                     </section>
@@ -98,7 +98,7 @@ export default function Page() {
                         <img 
                             src="/github.png" 
                             alt="Github" 
-                            className="w-full h-[8rem] text-textcolor font-spaceMono backdrop-blur-md rounded-[20px] border border-white/20 p-8"
+                            className="w-[8rem] h-[8rem] text-textcolor font-spaceMono backdrop-blur-md rounded-[20px] border border-white/20 p-8"
                         />
                     </a>
                 </div>
