@@ -53,7 +53,7 @@ export default function Page() {
             </motion.div>
         </div>
         
-        <div className="relative h-screen top-[10rem] md:top-[30rem] p-50 m-2 md:m-4">
+        <div className="relative h-screen top-[10rem] md:top-[30rem] p-[5rem] m-2 md:m-4">
             {/*  Intro */}
             <div className="my-4 md:my-8 grid grid-cols-1 md:grid-cols-2 gap-4">
                 <h2 className="text-[3rem] text-textcolor font-spaceMono px-8">
