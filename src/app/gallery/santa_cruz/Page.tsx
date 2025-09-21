@@ -12,7 +12,6 @@ export default function Page() {
         {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/santa_cruz_2025/DSC03163_disp.jpeg", orientation: "portrait"},
         {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/santa_cruz_2025/DSC03012_disp.jpeg", orientation: "landscape"},
         {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/santa_cruz_2025/DSC03014_disp.jpeg", orientation: "portrait"},
-        {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/santa_cruz_2025/DSC03001-Pano_disp.jpeg", orientation: "pano"},
         {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/santa_cruz_2025/DSC03032_disp.jpeg", orientation: "portrait"},
         {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/santa_cruz_2025/DSC03056_disp.jpeg", orientation: "portrait"},
         {src: "https://bhijoddwq2a3q5hu.public.blob.vercel-storage.com/santa_cruz_2025/DSC03059_disp.jpeg", orientation: "landscape"},
