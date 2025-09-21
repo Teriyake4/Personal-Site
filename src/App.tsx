@@ -6,7 +6,9 @@ import Home from "./app/home/Page"
 import Gallery from "./app/gallery/Page"
 import Projects from "./app/projects/Page"
 import Header from "./components/Header"
+
 import RoadTrip from "./app/gallery/road_trip/Page"
+import SantaCruz from "./app/gallery/santa_cruz/Page"
 
 const App: React.FC = () => {
     return (
@@ -17,6 +19,7 @@ const App: React.FC = () => {
                 <Route path="/gallery" element={<Gallery/>}/>
                 <Route path="/projects" element={<Projects/>}/>
                 <Route path="/gallery/california-oregon" element={<RoadTrip/>}/>
+                <Route path="/gallery/santa-cruz" element={<SantaCruz/>}/>
             </Routes>
             <Analytics />
         </Router>
