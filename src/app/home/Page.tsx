@@ -55,29 +55,27 @@ export default function Page() {
         
         <div className="relative h-screen top-[10rem] md:top-[30rem] p-[5rem] m-2 md:m-4">
             {/*  Intro */}
-            <div className="my-4 md:my-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-                <h2 className="text-[3rem] text-textcolor font-spaceMono px-8">
-                    About Me
-                </h2>
-                <div className="backdrop-blur-md rounded-[20px] border border-white/20 p-6">
-                    <section className="flex flex-col justify-center gap-4">
-                        <p className="
-                            text-textcolor font-spaceMono tracking-tight
-                            text-[1rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.5rem]
-                        ">
-                            I'm a second year computer science student at Stevens Institute of Technology in New Jersey with a interest in AI. 
-                            Alongside my coursework, I've been building a broad set of skills through personal projects and hands on learning. 
-                        </p>
-                        <p className="
-                            text-textcolor font-spaceMono tracking-tight
-                            text-[1rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.5rem]
-                        ">
-                            I love tackling ambitious challenges and diving into large projects that push me to learn and apply learned content to practical ideas. 
-                            Beyond the screens, and when I eventually find free time, I enjoy photography and getting active.
-                            Check out my projects and photos, and feel free to reach out if you have any questions or just want to chat.
-                        </p>
-                    </section>
-                </div>
+            <h2 className="text-[3rem] text-textcolor font-spaceMono px-8">
+                About
+            </h2>
+            <div className="backdrop-blur-md rounded-[20px] border border-white/20 p-6">
+                <section className="flex flex-col justify-center gap-4">
+                    <p className="
+                        text-textcolor font-spaceMono tracking-tight
+                        text-[1rem] sm:text-[rem] md:text-[1rem] lg:text-[1.3rem]
+                    ">
+                        I'm a second year computer science student at Stevens Institute of Technology in New Jersey with a interest in AI. 
+                        Alongside my coursework, I've been building a broad set of skills through personal projects and hands on learning. 
+                    </p>
+                    <p className="
+                        text-textcolor font-spaceMono tracking-tight
+                        text-[1rem] sm:text-[1rem] md:text-[1rem] lg:text-[1.3rem]
+                    ">
+                        I love tackling ambitious challenges and diving into large projects that push me to learn and apply learned content to practical ideas. 
+                        Beyond the screens, and when I eventually find free time, I enjoy photography and getting active.
+                        Check out my projects and photos, and feel free to reach out if you have any questions or just want to chat.
+                    </p>
+                </section>
             </div>
             {/* Contact */}
             <div className="my-8">

@@ -5,10 +5,10 @@ export type Image = {
 
 export default function gallery(galleryTitle: string, images: Image[]): React.ReactNode {
     return (
-      <div className="flex flex-col items-center h-screen bg-base m-1 md:m-4">
-            <h1 className="text-[2rem] text-textcolor mb-4 font-spaceMono m-[6rem]">
+        <div className="flex flex-col items-center h-screen bg-base m-1 md:m-4">
+            <h2 className="text-[2rem] text-textcolor mb-4 font-spaceMono m-[6rem]">
                 {galleryTitle}
-            </h1>
+            </h2>
             {/* auto-rows-[90vh] */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-auto md:mx-[4rem]">
                 {images.map((img, idx) => {
